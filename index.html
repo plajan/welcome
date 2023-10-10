@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Satisfy');
+        body {
+            background: linear-gradient(135deg, #8BC34A, #4CAF50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        p {
+            font-family: 'Satisfy', cursive;
+            font-size: 48px;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        p:hover {
+            transform: scale(1.1);
+        }
+
+        .animation {
+            animation-name: slideIn;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <p>Welcome</p>
+    </div>
+</body>
+</html>
